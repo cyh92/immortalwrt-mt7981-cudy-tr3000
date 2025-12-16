@@ -248,7 +248,7 @@ jobs:
         with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
-          files: ${{ env.FIRMWARE }}/*sysupgrade.bin
+          files: ${{ env.FIRMWARE }}/*
 
       - name: 🚧 Delete old workflow runs
         uses: Mattraks/delete-workflow-runs@v2
